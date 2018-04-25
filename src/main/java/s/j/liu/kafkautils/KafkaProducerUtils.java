@@ -1,6 +1,7 @@
 package s.j.liu.kafkautils;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Properties;
 
@@ -36,7 +37,7 @@ public class KafkaProducerUtils {
     props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
     props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
     producer = new KafkaProducer<String, String>(props);
-    kafkaData = new ArrayList<ProducerRecord<String, String>>();
+    kafkaData = Collections.synchronizedList(new ArrayList<ProducerRecord<String, String>>());
   }
 
   /**

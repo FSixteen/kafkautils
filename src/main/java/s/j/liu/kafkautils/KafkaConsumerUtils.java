@@ -40,8 +40,7 @@ public class KafkaConsumerUtils {
    * 
    * 
    */
-  public KafkaConsumerUtils(String kafkaIp, String groupId, String zkHosts, List<String> topics,
-      String offset) {
+  public KafkaConsumerUtils(String kafkaIp, String groupId, String zkHosts, List<String> topics, String offset) {
     this.topics = topics;
     props.put("bootstrap.servers", kafkaIp);
     props.put("enable.auto.commit", "true");
