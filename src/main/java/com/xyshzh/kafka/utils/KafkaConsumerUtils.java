@@ -1,4 +1,4 @@
-package s.j.liu.kafkautils;
+package com.xyshzh.kafka.utils;
 
 import java.util.ArrayList;
 import java.util.List;

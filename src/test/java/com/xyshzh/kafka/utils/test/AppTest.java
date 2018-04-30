@@ -1,7 +1,9 @@
-package s.j.liu.kafkautils;
+package com.xyshzh.kafka.utils.test;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.xyshzh.kafka.utils.KafkaProducerUtils;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
